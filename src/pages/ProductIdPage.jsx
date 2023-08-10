@@ -12,7 +12,7 @@ const ProductIdPage = () => {
   const [product, getSingleProduct] = useFetch()
   
   useEffect(() => {
-    getSingleProduct(`/products/${id}`)
+    getSingleProduct('/products/${id}')
   }, [id])
 
   
