@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import useFetch from "../hooks/useFetch"
 import { useEffect } from "react"
-import ProductInfo from "../components/ProductIdPage/Productinfo"
+import ProductInfo from "../components/ProductIdPage/ProductInfo"
 import SimilarProducts from "../components/ProductIdPage/SimilarProducts"
 
 
@@ -12,7 +12,7 @@ const ProductIdPage = () => {
   const [product, getSingleProduct] = useFetch()
   
   useEffect(() => {
-    getSingleProduct('/products/${id}')
+    getSingleProduct(`/products/${id}`)
   }, [id])
 
   
